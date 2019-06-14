@@ -278,7 +278,7 @@ public class JPrintBox implements PrintBox {
                             titleString.append(titleBar[line][column]);
                             break;
                         case 1:
-                            if(column ==0 || column ==(getTotalBoxWidth()-1)) {
+                            if(column ==0 || column ==(getTotalBoxWidth()-2)) {
                                 titleBar[line][column]=SIDE_BOX_LINE_CHARACTER;
                             }
                             if(column > 0 && column < getTotalBoxWidth()-2) {
@@ -294,7 +294,7 @@ public class JPrintBox implements PrintBox {
                             titleString.append(titleBar[line][column]);
                             break;
                         case 2:
-                            if(column==0 || column==(getTotalBoxWidth()-1)) {
+                            if(column==0 || column==(getTotalBoxWidth()-2)) {
                                 titleBar[line][column]=SIDE_BOX_LINE_CHARACTER;
                             }
                             if(column>0 && column < getTotalBoxWidth()-2) {
@@ -358,7 +358,7 @@ public class JPrintBox implements PrintBox {
                 for (int column = 0; column < getTotalBoxWidth(); column++) {
                     switch(line) {
                         case 0:
-                            if (column == 0 || column == (getTotalBoxWidth() - 1)) {
+                            if (column == 0 || column == (getTotalBoxWidth() - 2)) {
                                 footerLines[line][column] = SIDE_BOX_LINE_CHARACTER;
                             }
                             else if(column < getTotalBoxWidth()-2) {
@@ -367,7 +367,7 @@ public class JPrintBox implements PrintBox {
                             footerString.append(footerLines[line][column]);
                             break;
                         case 1:
-                            if (column == 0 || column == (getTotalBoxWidth() - 1)) {
+                            if (column == 0 || column == (getTotalBoxWidth() - 2)) {
                                 footerLines[line][column] = SIDE_BOX_LINE_CHARACTER;
                             }
                             else if(column<(getTotalBoxWidth()-KEY_START_POSITION)) {
@@ -381,7 +381,7 @@ public class JPrintBox implements PrintBox {
                             footerString.append(footerLines[line][column]);
                             break;
                         case 2:
-                            if (column == 0 || column == (getTotalBoxWidth() - 1)) {
+                            if (column == 0 || column == (getTotalBoxWidth() - 2)) {
                                 footerLines[line][column] = SIDE_BOX_LINE_CHARACTER;
                             }
                             else if(column < getTotalBoxWidth()-2) {
